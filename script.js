@@ -12,9 +12,4 @@ fetch('https://ipinfo.io/json?token=0784c654f65d07')
     } else if (data.country === 'GB') {
       window.location.replace("https://cfd.fortuna-invest.com/register");
     }
-    else if(isMobileDevice()) {
-      setTimeout(function() {
-        window.location.replace("https://www.example.com/error-page");
-      }, 1000);
-    }
   });
